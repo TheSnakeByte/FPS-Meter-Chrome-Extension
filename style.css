@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html {
+  height: 200px;
+  width: 300px;
+}
+
+body {
+  background-color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  padding: 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 0%;
+  margin-left: 3%;
+}
+
+h1 {
+  color: #6600ff;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.9;
+}
+
+h4 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+p {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 0;
+}
+
+h5 {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 0;
+}
+
+h6 {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 0;
+}
+
+h6:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer {
+	width: 100%;
+	height: 100%;
+  color: #fff;
+	font-size: 1.2rem;
+	line-height: 0px;
+	text-align: center;
+}
+
+/* Dark/Light Mode Toggle */
+.theme {
+  float: right;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 19px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #292929;
+  -webkit-transition: .4s;
+  transition: .4s;
+  display: inline;
+  text-align: center;
+  align-items: center;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #6600ff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00ff00;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
